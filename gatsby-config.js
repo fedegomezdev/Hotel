@@ -7,6 +7,7 @@ module.exports = {
   plugins: [
     'gatsby-plugin-emotion',
     `gatsby-plugin-react-helmet`,
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -31,5 +32,13 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
+    {
+      resolve: 'gatsby-source-datocms',
+      options: {
+        apiToken:'94623fcfea2e8f7cad0eb2b4ff0c3c'
+      }
+
+    }
+
   ],
 }
