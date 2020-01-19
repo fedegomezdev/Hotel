@@ -40,7 +40,7 @@ function ImagenHotel() {
         image:file(relativePath: {eq: "hotel.jpg" }){
           sharp:childImageSharp{
             fluid{
-              srcSetWebp
+                ...GatsbyImageSharpFluid_withWebp
             }
           }
         }
