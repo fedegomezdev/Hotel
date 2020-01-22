@@ -5,6 +5,20 @@ import ContenidoInicio from '../components/contenidoInicio';
 import HabitacionPreviews from '../components/habitacionPreviews';
 import useHabitaciones from '../hooks/useHabitaciones';
 import {css} from '@emotion/core';
+import styled from '@emotion/styled';
+
+
+const ListadoHabitaciones = styled.ul`
+  max-width:1200px;
+  width:95%;
+  margin:4rem auto 0 auto;
+
+  @media (min-width:768px){
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    column-gap:3rem;
+  }
+`;
 
 const IndexPage = () => {
 
@@ -19,12 +33,15 @@ const IndexPage = () => {
 
           <h2 css={css`text-align:center ; margin-top:5rem; font-size:3rem; ` }> Nuestras Habitaciones </h2>
           
-          <ul>
+          <ListadoHabitaciones>
               {habitaciones.map(habitacion =>(
-                 <HabitacionPreviews/> 
+                 <HabitacionPreviews
+                  key={habitacion.id}
+                  habitacion={habitacion}
+                 /> 
               ))}
 
-          </ul>
+          </ListadoHabitaciones>
         </Layout>
       )
 }

@@ -1,9 +1,35 @@
-import React from 'react'
+import React from 'react';
+import Image from 'gatsby-image';
+import {css} from '@emotion/core';
+import {Link} from 'gatsby';
+import styled from '@emotion/styled';
 
-function HabitacionPreviews() {
+const Boton = styled(Link)`
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: rgba(44,62,80,.85);
+    width: 100%;
+    color: #FFF;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+`;  
+
+
+function HabitacionPreviews({habitacion}) {
+
+    const {contenido, imagen, titulo, slug} = habitacion;
+
     return (
-        <div>
-            <p>Desde Habitacion</p>
+        <div css={css`border:1px solid #e1e1e1; margin-bottom:2rem;`}> 
+            <Image fluid={imagen.fluid}/> 
+            <div css={css`padding:2rem;`}>       
+                   <h3 css={css`font-size:3rem; margin-top:2rem;`}>{titulo}</h3>
+                   <p>{contenido}</p>
+                <Boton to={slug}>Ver Habitacion</Boton>
+            </div>
         </div>
     )
 }
