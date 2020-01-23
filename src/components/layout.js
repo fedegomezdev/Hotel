@@ -1,7 +1,8 @@
 import React from 'react'
-import Header from './header';
 import Helmet from 'react-helmet';
 import {Global, css} from '@emotion/core';
+import Footer from './footer';
+import Header from './header';
 
 function Layout(props){
 
@@ -48,7 +49,8 @@ function Layout(props){
         </Helmet>
 
         <Header/>
-        {props.children}
+            {props.children}
+        <Footer/>
         </>
     )
 
