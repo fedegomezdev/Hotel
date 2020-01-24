@@ -24,7 +24,7 @@ function Header(){
             }
             `}>
                 <EnlaceHome to='/'>
-                <h1>Hotel</h1>
+                <h1>Hotel Millen</h1>
                 </EnlaceHome>
 
                 <Navegacion/>

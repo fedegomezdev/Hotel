@@ -11,7 +11,7 @@ const EnlaceHome = styled(Link)`
     text-decoration:none;
 `
 
-function Footer(){
+function Footer({title}){
 
     const year = new Date().getFullYear();
 
@@ -30,7 +30,7 @@ function Footer(){
                 <Navegacion/>
 
                 <EnlaceHome to='/'>
-                <h1>Hotel</h1>
+                <h1>{title}</h1>
                 </EnlaceHome>
 
                 
