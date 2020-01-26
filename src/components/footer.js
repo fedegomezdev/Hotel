@@ -36,7 +36,7 @@ function Footer({title}){
                 
             </div>
         </footer>
-        <p css={css` background-color:rgb(33,44,55); text-align:center; color:#fff; margin:0 ; padding:1rem;`}>codeFind. Todos Los Derechos Reservados {year} &copy</p>
+        <p css={css` background-color:rgb(33,44,55); text-align:center; color:#fff; margin:0 ; padding:1rem;`}> Todos Los Derechos Reservados {year} - &copy; codeFind</p>
         </>
     )
 }
