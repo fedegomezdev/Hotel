@@ -31,7 +31,7 @@ const NavLink = styled(Link)`
 function Navegacion(){
     return(
         <Nav>
-            <NavLink to={'/'} activeClassName="pagina-actual"> Inicio </NavLink>
+            <NavLink to={'/'} activeClassName="pagina-actual"> Inicioo </NavLink>
             <NavLink to={'/nosotros'} activeClassName="pagina-actual"> Nosotros </NavLink>      
         </Nav>
     )
