@@ -11,7 +11,7 @@ const EnlaceHome = styled(Link)`
     text-decoration:none;
 `
 
-function Footer(){
+function Footer({title}){
 
     const year = new Date().getFullYear();
 
@@ -30,13 +30,13 @@ function Footer(){
                 <Navegacion/>
 
                 <EnlaceHome to='/'>
-                <h1>Hotel</h1>
+                <h1>{title}</h1>
                 </EnlaceHome>
 
                 
             </div>
         </footer>
-        <p css={css` background-color:rgb(33,44,55); text-align:center; color:#fff; margin:0 ; padding:1rem;`}>Hotel. Todos Los Derechos Reservados {year}$copy</p>
+        <p css={css` background-color:rgb(33,44,55); text-align:center; color:#fff; margin:0 ; padding:1rem;`}> Todos Los Derechos Reservados {year} - &copy; codeFind</p>
         </>
     )
 }
