@@ -31,7 +31,7 @@ const IndexPage = () => {
           <ImagenHotel />
           <ContenidoInicio/>
 
-          <h2 css={css`text-align:center ; margin-top:5rem; font-size:3rem; ` }> Nuestras Habitaciones </h2>
+          <h2 css={css`text-align:center ; margin-top:5rem; font-size:3rem; ` }> Nuestras Habitaciones aqui </h2>
           
           <ListadoHabitaciones>
               {habitaciones.map(habitacion =>(
